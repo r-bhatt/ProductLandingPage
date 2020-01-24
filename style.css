@@ -1,0 +1,59 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    overflow: auto;
+}
+
+.header-img > img {
+    width: 70px;
+    float: left;
+}
+
+.nav-bar {
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.form-div {
+    text-align: center;
+    font-size : 1.2rem;
+}
+
+.form-group > input {
+    font-size: 1.05rem;
+    height: 1.6rem;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form> button {
+    background-color: goldenrod;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.95rem;
+    border: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.category{
+    overflow: auto;
+}
+
+.article-logo {
+    float: left;
+}
+
