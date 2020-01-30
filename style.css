@@ -16,6 +16,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav-link {
@@ -43,17 +45,52 @@ form> button {
     font-weight: 800;
     font-size: 0.95rem;
     border: 0px;
+    margin-bottom: 50px;
 }
 
 button:hover {
     cursor: pointer;
 }
 
-.category{
-    overflow: auto;
+.hide-sm {
+    display: none;
 }
 
-.article-logo {
-    float: left;
+.feature-category {
+    text-align: center;
 }
 
+.article-cotent h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.article-cotent p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width : 810px) {
+    .nav-bar {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+
+    .feature-category {
+        display: flex;
+    }
+    
+    .article-logo {
+        display: block;
+        align-self: center;
+        color: goldenrod;
+        flex-basis: 160px;
+        flex-shrink: 0;
+    }
+
+    .article-cotent {
+        text-align: left;
+    }
+}
