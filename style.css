@@ -1,14 +1,25 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
 }
 
 .header {
-    overflow: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+}
+
+.header-img {
+    align-self: center;
+    padding: 20px;
 }
 
 .header-img > img {
     width: 70px;
-    float: left;
 }
 
 .nav-bar {
@@ -24,6 +35,7 @@ body {
     font-size: 1.3rem;
     margin: 0px 10px;
     text-decoration: none;
+    color: black;
 }
 
 .form-div {
@@ -39,17 +51,28 @@ body {
     max-width: 300px;
 }
 
-form> button {
-    background-color: goldenrod;
+button {
+    background-color: #fac903;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 0.95rem;
     border: 0px;
-    margin-bottom: 50px;
+    padding: 5px;
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f99e55;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.features {
+    max-width: 1260px;
+    margin:100px auto 0;
 }
 
 .hide-sm {
@@ -71,7 +94,104 @@ button:hover {
     font-size: 1.2rem;
 }
 
+.video-window {
+    margin: 100px auto 0;
+    max-width: 560px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.available-plans {
+    max-width: 1260px;
+    margin:100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.plan {
+    text-align: center;
+    padding: 0;
+    border: 1px solid black;
+    margin: 5px;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    
+}
+
+
+.plan h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    background-color: #dedede;
+    padding: 20px 0px;
+    font-weight: bolder;
+    margin: 0;
+    border-top: 1.5px solid black;
+}
+
+.plan-details {
+    padding: 20px 0;
+    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    border-left: 1.5px solid black;
+    line-height: 1.5;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.select {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding: 5px 10px;
+}
+
+.description {
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #dedede;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.footer-info {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: lighter;
+}
+
+.footer-info a {
+    margin: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    margin-right: 12px;
+    font-size: 1.2rem;
+    color: #6f6f6f;
+}
+
 @media screen and (min-width : 810px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .nav-bar {
         flex-direction: row;
         justify-content: flex-end;
